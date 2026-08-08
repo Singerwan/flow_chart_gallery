@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 st.title('Data Processing Workflow_Diagram')
 with open("Data Processing WorkFlow Diagram.drawio.html", "r", encoding="utf-8") as html_file:
     html_content = html_file.read()
-components.html(html_content,height=2850,width=1200)
+components.html(html_content,height=2750,width=1200)
 
 
 st.title('Pandas Workflow')
