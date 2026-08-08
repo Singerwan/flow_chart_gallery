@@ -12,7 +12,7 @@ components.html(html_content,height=2800,width=1200)
 st.title('Pandas Workflow')
 with open("datadiagram.html", "r", encoding="utf-8") as html_file:
     html_content = html_file.read()
-components.html(html_content,height=600,width=1200)
+components.html(html_content,height=550,width=1200)
 
 st.title('GeoJson File Breakdown')
 with open("Geojsonfile_flowchart.html", "r", encoding="utf-8") as html_file:
