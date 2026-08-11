@@ -8,6 +8,13 @@ with open("Data Processing WorkFlow Diagram.drawio.html", "r", encoding="utf-8")
     html_content = html_file.read()
 components.html(html_content,height=2800,width=1200)
 
+import streamlit as st
+st.set_page_config(layout="wide")
+st.title('DataProcessing Mindmap')
+import streamlit.components.v1 as components
+with open("dataprocessing.html", "r", encoding="utf-8") as html_file:
+    html_content = html_file.read()
+components.html(html_content,width=1200,height=1200)
 
 st.title('Pandas Workflow')
 with open("datadiagram.html", "r", encoding="utf-8") as html_file:
@@ -52,5 +59,7 @@ import streamlit.components.v1 as components
 with open("literatureoverview.html", "r", encoding="utf-8") as html_file:
     html_content = html_file.read()
 components.html(html_content,width=1200,height=1200)
+
+
 
 
