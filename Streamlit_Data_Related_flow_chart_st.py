@@ -36,4 +36,10 @@ with open("Map Choropleth .drawio.html", "r", encoding="utf-8") as html_file:
     html_content = html_file.read()
 components.html(html_content,height=650,width=1200)
 
-
+import streamlit as st
+st.set_page_config(layout="wide")
+st.title('Plotly Workflow')
+import streamlit.components.v1 as components
+with open("plotlyworkflow.html", "r", encoding="utf-8") as html_file:
+    html_content = html_file.read()
+components.html(html_content,width=1200,height=1200)
