@@ -15,7 +15,7 @@ st.title('Data Visualization Chart Types Choice FlowChart')
 import streamlit.components.v1 as components
 with open("Data Visualization Chart Types FlowChart.html", "r", encoding="utf-8") as html_file:
     html_content = html_file.read()
-components.html(html_content,width=1200,height=1500)
+components.html(html_content,width=1200,height=1450)
 
 import streamlit as st
 st.set_page_config(layout="wide")
